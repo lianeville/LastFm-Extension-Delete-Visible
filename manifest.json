@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Last.fm Delte Visible Scrobbles",
+  "version": "1.0",
+  "description": "Adds a button to your library that lets you delete all scrobbles you see on the page from your history.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.last.fm/user/*/library"],
+      "js": ["content.js"]
+    }
+  ]
+}
